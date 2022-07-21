@@ -1,28 +1,27 @@
 const layersOrder = [
-  { name: '00_bg', number: 2},
-  { name: '01_bgdeco', number: 5},
-  { name: '02_hair-back', number: 15},
-  { name: '03_body', number: 2},
-  { name: '04_face', number: 1},
-  { name: '05_mouth', number: 12},
-  { name: '06_eyes', number: 5},
-  { name: '07_brow', number: 5},
-  { name: '08_hair-front', number: 15},
-  { name: '09_deco', number: 13},
-  { name: '10_hands', number: 7},
+  { name: '09_item', number: 10},
+  { name: '00_fur', number: 8},
+  { name: '01_hand', number: 11},
+  { name: '02_eyes', number: 8},
+  { name: '03_ear', number: 12},
+  { name: '04_mouth', number: 5},
+  { name: '05_cloth', number: 10},
+  { name: '06_head', number: 10},
+  { name: '07_bg', number: 6},
+  { name: '08_fg', number: 3},
+  //  { name: '10_rare', number: 6},
 ];
-
 const format = {
-    width: 1200,
-    height: 1200
+    width: 100,
+    height: 100
 };
 
 const rarity = [
-    { key: "", val: "original" },
-    { key: "_r", val: "rare" },
-    { key: "_sr", val: "super rare" },
+  // { key: "", val: "original" },
+  //   { key: "_r", val: "rare" },
+  //   { key: "_sr", val: "super rare" },
 ];
 
-const defaultEdition = 1000;
+const defaultEdition = 100;
 
 module.exports = { layersOrder, format, rarity, defaultEdition };

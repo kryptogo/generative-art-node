@@ -112,6 +112,8 @@ const drawLayer = async (_layer, _edition) => {
   const rand = Math.random();
   let element =
     _layer.elements[Math.floor(rand * _layer.number)] ? _layer.elements[Math.floor(rand * _layer.number)] : null;
+  console.log(element)
+  console.log(_layer)
   if (element) {
     addAttributes(element, _layer);
     const image = await loadImage(`${_layer.location}${element.fileName}`);
@@ -151,6 +153,8 @@ const createFiles = async edition => {
      addMetadata(i);
      console.log("Creating edition " + i);
    }
+    const context = canvas.getContext('2d');
+    context.clearRect(0, 0, canvas.width, canvas.height);
  }
 };
 
